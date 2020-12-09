@@ -12,6 +12,26 @@
   </head>
   <body>
     <div class="container">
+      <ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fun Facts</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="./networking.html">Networking</a></li>
+      <li><a class="dropdown-item" href="#">Raspberry Pi</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="networking.html">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
       <div class="row">
         <div class="col-sm">
           <div class="card" style="width: 18rem;">
@@ -29,22 +49,23 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Setting up ssh / ip address</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <h5 class="card-title">why setting up static internet protocol(IP) is beneficial?</h5>
         <ul class="list-group">
   <li class="list-group-item" aria-current="true">
-     <p class="card-text">Usually Router assigns ip addresses to devices on your network using DHCP,or Dynamic Host Configuration Protocol.As you connect new devices to the network,they'll be assigned the next IP address in a few days, its IP address will "expire" so it can be assigned to something else.</p>
+     <p class="card-text">When there is lot of devices on your network—computers, NAS devices, and Raspberry Pis—it can be annoying to constantly look up their IP addresses when you need to access them remotely. Make your life easier with a set of unchanging, static IP addresses for those machines.
+</p>
    </li>
   <li class="list-group-item"> 
-      <p class="card-text">Usually Router assigns ip addresses to devices on your network using DHCP,or Dynamic Host Configuration Protocol.As you connect new devices to the network,they'll be assigned the next IP address in a few days, its IP address will "expire" so it can be assigned to something else.</p>
+      <p class="card-text">Usually router assigns IP addresses to devices on your network using DHCP, or Dynamic Host Configuration Protocol. As you connect new devices to the network, they'll be assigned the next IP address in the pool, and if a device hasn't connected in a few days, its IP address will "expire" so it can be assigned to something else.</p>
    </li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
+  <li class="list-group-item">For everyday use, this is perfectly fine, and you'll never even notice it happening in the background. But if you regularly SSH into your Raspberry Pi, use Wake-on-LAN to turn your computer on from across the house, or perform other advanced networking tasks, DHCP can become an annoyance.
+
+It's hard to remember which IP address is assigned to which device, and if they ever expire, you have to look it up all over again. That's where a static IP address comes in handy.</li>
+  </ul>
    
       </div>
       <div class="modal-footer">
