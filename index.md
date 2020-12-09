@@ -12,7 +12,7 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fun Facts</a>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="networking.html">Networking</a></li>
+      <li><a class="dropdown-item" href="./networking.html">Networking</a></li>
       <li><a class="dropdown-item" href="#">Raspberry Pi</a></li>
       <li><hr class="dropdown-divider"></li>
       <li><a class="dropdown-item" href="#">Separated link</a></li>
